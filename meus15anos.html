@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15 Anos - Thais Grazielle</title>
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <!-- Canvas para o Glitter -->
+    <canvas id="canvas"></canvas>
+    <div class="background-overlay"></div>
+
+    <div class="container">
+        <div class="foto-moldura">
+            <!-- Substitua pela foto real quando quiser -->
+            <img src="https://placeholder.com" alt="Foto da Thais"> 
+        </div>
+
+        <h1 class="prata-text">Thais Grazielle</h1>
+        <p class="subtitulo">VOCÊ É NOSSO CONVIDADO ESPECIAL</p>
+
+        <!-- Contagem Regressiva -->
+        <div class="countdown-container">
+            <div class="time-block"><span id="days">00</span><small>Dias</small></div>
+            <div class="time-block"><span id="hours">00</span><small>Horas</small></div>
+            <div class="time-block"><span id="minutes">00</span><small>Min</small></div>
+            <div class="time-block"><span id="seconds">00</span><small>Seg</small></div>
+        </div>
+
+        <div class="bloco-info">
+            <p>🗓️ <strong>20 de Maio, 2026</strong></p>
+            <p>⏰ Às 20:00 Horas</p>
+            <p>📍 <strong>Espaço de Festas Royal</strong></p>
+        </div>
+
+        <div class="btn-grupo">
+<!-- Botão Principal -->
+<a href="javascript:void(0)" class="btn-interativo" onclick="abrirMenuMapas()">📍 LOCALIZAÇÃO</a>
+
+<!-- Menu de Seleção de Mapas -->
+<div id="menu-mapas-overlay" onclick="fecharMenuMapas()">
+    <div class="menu-mapas-card" onclick="event.stopPropagation()">
+        <h3>Abrir com...</h3>
+        
+        <!-- Google Maps -->
+        <a href="https://google.com" target="_blank" class="btn-mapa">Google Maps</a>
+        
+        <!-- Waze -->
+        <a href="https://waze.com" target="_blank" class="btn-mapa">Waze</a>
+        
+        <!-- Apple Maps (Para iPhones) -->
+        <a href="https://apple.com" target="_blank" class="btn-mapa">Apple Maps</a>
+        
+        <button onclick="fecharMenuMapas()" class="btn-fechar">CANCELAR</button>
+    </div>
+</div>
+            <a href="https://wa.me!+✨" target="_blank" class="btn-interativo">✅ CONFIRMAR PRESENÇA</a>
+            <a href="sugestaopresente.htm" class="btn-interativo">🎁 SUGESTÃO DE PRESENTES</a>
+            <a href="galeria.html" class="btn-interativo">📸 GALERIA DIGITAL</a>
+        </div>
+    </div>
+
+    <!-- Script no final para não travar o carregamento -->
+    <script src="script.js"></script>
+</body>
+</html>
